@@ -1,7 +1,7 @@
 N = int(input())
-num = list(map(int, input()))
+num = list(input())
 sum = 0
 
 for i in num:
-    sum += i
+    sum += int(i)
 print(sum)
