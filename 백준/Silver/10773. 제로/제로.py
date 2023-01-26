@@ -1,12 +1,11 @@
 K = int(input())
+money = []
 
-stk = []
 for i in range(K):
     num = int(input())
-
     if num == 0:
-        stk.pop()
+        money.pop()
     else:
-        stk.append(num)
+        money.append(num)
 
-print(sum(stk))
+print(sum(money))
