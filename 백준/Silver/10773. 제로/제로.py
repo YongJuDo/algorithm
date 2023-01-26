@@ -1,13 +1,12 @@
 import sys
-
 K = int(sys.stdin.readline())
-money = []
+stk = []
 
 for i in range(K):
     num = int(sys.stdin.readline())
     if num == 0:
-        money.pop()
+        stk.pop()
     else:
-        money.append(num)
+        stk.append(num)
 
-print(sum(money))
+print(sum(stk))
