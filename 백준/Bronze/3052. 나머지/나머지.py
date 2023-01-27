@@ -1,6 +1,8 @@
 arr = []
-for i in range(10):
-    a = int(input())
-    if a % 42 not in arr:
-        arr.append(a % 42)
-print(len(arr))
+for _ in range(10):
+    N = int(input())
+    mod = N % 42
+    arr.append(mod)
+
+result = set(arr)
+print(len(result))
