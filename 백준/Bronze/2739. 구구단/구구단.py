@@ -1,2 +1,2 @@
 num = int(input())
-[print(f'{num} * {j} = {num * j}') for j in range(1, 10)]
+[print(f'{num} * {i} = {num * i}') for i in range(1, 10)]
