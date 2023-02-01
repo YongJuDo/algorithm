@@ -1,6 +1,11 @@
-n = int(input())
+N = int(input())
 
-for i in range(n,3,-1):
-    if all([(s == '4' or s == '7') for s in str(i)]):
-        print(i)
+while True:
+    check = True
+    for s in str(N):
+        if s != '4' and s != '7':
+            check = False
+            N -= 1
+    if check:
+        print(N)
         break
