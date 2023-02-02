@@ -5,7 +5,7 @@ for _ in range(10):
 for _ in range(10):
     K_score.append(int(input()))
 
-W_score.sort(reverse=True)
-K_score.sort(reverse=True)
+W_score.sort()
+K_score.sort()
 
-print(sum(W_score[:3]), sum(K_score[:3]))
+print(sum(W_score[7:]), sum(K_score[7:]))
