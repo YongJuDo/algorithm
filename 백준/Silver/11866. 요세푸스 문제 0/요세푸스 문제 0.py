@@ -1,15 +1,15 @@
-from collections import deque
 n, k = map(int, input().split())
-queue = deque()
+queue = []
 result = []
 
 for i in range(1, n+1):
     queue.append(i)
 
+idx = 0
+
 while len(queue) > 0:
-    for i in range(k-1):
-        queue.append(queue.popleft())
-    result.append(str(queue.popleft()))
+    idx = (idx + k - 1) % len(queue)
+    result.append(str(queue.pop(idx)))
 
 
 print(f"<{', '.join(result)}>")
