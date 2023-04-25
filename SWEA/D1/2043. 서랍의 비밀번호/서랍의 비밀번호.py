@@ -1,10 +1,9 @@
 P, K = map(int, input().split())
-cnt = 1
 
-while True:
-    if P == K:
-        break
-    else:
-        cnt += 1
+count = 1
+for i in range(P):
+    if P != K:
         K += 1
-print(cnt)
+        count += 1
+
+print(count)
